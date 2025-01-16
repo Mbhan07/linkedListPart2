@@ -17,7 +17,7 @@ using namespace std;
 
 //create student using inputted information
 
-Student::Student(char * firstNameInput, char * lastNameInput, int input id, float input gpa){
+Student::Student(char * firstNameInput, char * lastNameInput, int inputid, float inputgpa){
   firstname = new char[200];
   lastname = new char [200];
 
@@ -43,12 +43,12 @@ char * Student::getLastName(){
   return lastname;
 }
 
-char * Student::getID() {
+int Student::getID() {
 
   return id;
 }
 
-char * Student::getGPA(){
+float Student::getGPA(){
 
   return gpa;
 }
