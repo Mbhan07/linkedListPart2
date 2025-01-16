@@ -16,6 +16,10 @@ using namespace std;
   Here are sources I used for concepts such as recursion, traversing through linked lists, etc:
 
   https://stackoverflow.com/questions/48671554/how-do-you-print-a-linked-list-recursively-in-c
+  https://github.com/Mbhan07/studentList/blob/main/studentList.cpp
+  https://github.com/Mbhan07/linkedlist/blob/main/main.cpp
+
+  Why is recursion needed in the context of this project?
   
 
  */
