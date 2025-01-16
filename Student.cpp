@@ -1,3 +1,9 @@
+
+/*
+In this file, it contains the functions for the student class
+ */
+
+
 //this is student.cpp file
 
 
