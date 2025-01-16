@@ -11,7 +11,7 @@ using namespace std;
 //create Student class
 
 class Student{
-
+ public:
   //create new student
   Student(char * firstNameInput, char * lastNameInput, int inputid, float inputgpa);
   // first name
@@ -23,10 +23,10 @@ class Student{
   //gpa value
   float getGPA();
 
-
+ private:
   char * firstname;
   char * lastname;
-  id id;
+  int id;
   float gpa;
 
 
