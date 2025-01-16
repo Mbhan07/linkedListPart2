@@ -1,8 +1,6 @@
-#include "Node.h"
+// from emma bendersky
 
-/*
-This is the Node.cpp file
- */
+#include "Node.h"
 
 using namespace std;
 
@@ -14,7 +12,7 @@ Node::Node(Student* newStudent)
 
 Node::~Node()
 {
-  delete &student;
+  delete student;
   next = NULL;
 }
 
