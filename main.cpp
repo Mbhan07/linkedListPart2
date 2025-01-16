@@ -10,8 +10,17 @@
 using namespace std;
 
 /*
-function prototypes 
+
+  This is Linked Lists Part 2! This project uses the old Student List program, only with better retrieval of students since the program now includes linked lists.
+
+  Here are sources I used for concepts such as recursion, traversing through linked lists, etc:
+
+  https://stackoverflow.com/questions/48671554/how-do-you-print-a-linked-list-recursively-in-c
+  
+
  */
+//function prototypes 
+ 
 
 void ADD(Node * current, Node * previous, Student * newStudent, Node * &head);
 void PRINT(Node * head);
@@ -137,6 +146,8 @@ void AVERAGE(Node * current, Node * head, int count, float average){
       cout << "No students availible to calculate average: " << endl;
       
     }else {
+
+      //source: https://stackoverflow.com/questions/10181149/c-walkthrough-cout-setfiosfixed-and-cout-precision
        cout.setf(ios::fixed, ios::floatfield);
        cout.setf(ios::showpoint);
        cout.precision(2);
