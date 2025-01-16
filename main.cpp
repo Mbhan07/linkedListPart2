@@ -16,6 +16,7 @@ function prototypes
 void ADD(Node * current, Node * previous, Student * newStudent, Node * &head);
 void PRINT(Node * head);
 void DELETE(Node * current, Node * previous, int id, Node *& head);
+void AVERAGE(Node * current, Node * head, int count, float average);
 
 int main(){
 
@@ -31,12 +32,10 @@ int main(){
     cin >> input;
     cin.ignore();
 
-    //for adding, deleteing, averaging or printning, which will all require the same information per student
-
     if(strcmp(input, "ADD") == 0){
       char * first = new char[100];
       char * last = new char[100];
-      id id;
+      int id;
       float gpa;
 
 
@@ -74,7 +73,7 @@ int main(){
     }else if (strcmp(input, "PRINT") == 0){
       if(head == NULL){
 	cout << "There are no students in the list currently." << endl;
-	continue;
+	;
       }else {
 	PRINT(head);
       }
@@ -144,7 +143,7 @@ void AVERAGE(Node * current, Node * head, int count, float average){
   AVERAGE(current -> getNext(), head, count, average);
 }
 
-void DELETE(NOde * current, Node * pre, int id, NOde * &head){
+void DELETE(Node * current, Node * pre, int id, Node * &head){
   if (current == NULL){
     cout << "Nothing in database" << endl;
     return;
