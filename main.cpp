@@ -55,7 +55,7 @@ int main(){
 
       //make new student with information inputted
       Student * newStudent = new Student((char*) first, (char*) last, id, (float)gpa);
-      cout << endl;
+      ADD(head, nullptr, newStudent, head);
 
       //to keep the code clean
       
@@ -91,6 +91,7 @@ int main(){
 void ADD(Node * current, Node * previous, Student * newStudent, Node * &head){
 
   if (head == NULL){
+    cout << "Is my add function working?" << endl;
     head = new Node(newStudent);
     return;
   }
@@ -114,11 +115,16 @@ void PRINT(Node * head){
     return;
   }else {
     if(head != NULL){
-      cout << head -> getStudent()->getFirstName()<< " " << endl;
+      cout << head->getStudent()->getFirstName() << " ";
+      cout << head->getStudent()->getLastName() << ", ";
+      cout << fixed << setprecision(2) << head->getStudent()->getID() << ", ";
+      cout << head->getStudent()->getGPA() << endl;
+      head = head->getNext();
+      /*cout << head -> getStudent()->getFirstName()<< " " << endl;
       cout << head -> getStudent()->getLastName()<< " " << endl;
       cout<<fixed<<setprecision(2)<<head->getStudent()->getID()<<",";
       cout<<head->getStudent()->getGPA()<<endl;
-      PRINT(head->getNext());
+      PRINT(head->getNext());*/
     }
     
   }
