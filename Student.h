@@ -1,5 +1,15 @@
-//student.h file, mahika bhan
+/*
 
+  This file defines the Student class, which allows us to store informaiton about students
+  
+
+ */
+
+
+//student.h file, mahika bhan, 01/16/2025
+
+
+//header guard
 #ifndef STUDENT_H
 #define STUDENT_H
 
@@ -31,5 +41,7 @@ class Student{
 
 
 };
+
+//end of header guard
 
 #endif
